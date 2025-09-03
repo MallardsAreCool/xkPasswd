@@ -32,7 +32,6 @@
             this.btnGenerate = new System.Windows.Forms.Button();
             this.chkAppendToStart = new System.Windows.Forms.CheckBox();
             this.lblWordCount = new System.Windows.Forms.Label();
-            this.lnkGitHubLink = new System.Windows.Forms.LinkLabel();
             this.chkSaveToClipboard = new System.Windows.Forms.CheckBox();
             this.numWordCount = new System.Windows.Forms.NumericUpDown();
             this.ddlWordDictionary = new System.Windows.Forms.ComboBox();
@@ -83,6 +82,7 @@
             this.lblOther = new System.Windows.Forms.Label();
             this.lnkxkPasswdLink = new System.Windows.Forms.LinkLabel();
             this.lblInspiredBy = new System.Windows.Forms.Label();
+            this.lnkComic = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numWordCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinWordLen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxWordLen)).BeginInit();
@@ -128,17 +128,6 @@
             this.lblWordCount.Size = new System.Drawing.Size(95, 13);
             this.lblWordCount.TabIndex = 4;
             this.lblWordCount.Text = "Number Of Words:";
-            // 
-            // lnkGitHubLink
-            // 
-            this.lnkGitHubLink.AutoSize = true;
-            this.lnkGitHubLink.Location = new System.Drawing.Point(509, 480);
-            this.lnkGitHubLink.Name = "lnkGitHubLink";
-            this.lnkGitHubLink.Size = new System.Drawing.Size(40, 13);
-            this.lnkGitHubLink.TabIndex = 5;
-            this.lnkGitHubLink.TabStop = true;
-            this.lnkGitHubLink.Text = "GitHub";
-            this.lnkGitHubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GitHub_LinkClicked);
             // 
             // chkSaveToClipboard
             // 
@@ -771,7 +760,7 @@
             // lnkxkPasswdLink
             // 
             this.lnkxkPasswdLink.AutoSize = true;
-            this.lnkxkPasswdLink.Location = new System.Drawing.Point(68, 480);
+            this.lnkxkPasswdLink.Location = new System.Drawing.Point(135, 482);
             this.lnkxkPasswdLink.Name = "lnkxkPasswdLink";
             this.lnkxkPasswdLink.Size = new System.Drawing.Size(55, 13);
             this.lnkxkPasswdLink.TabIndex = 37;
@@ -782,19 +771,30 @@
             // lblInspiredBy
             // 
             this.lblInspiredBy.AutoSize = true;
-            this.lblInspiredBy.Location = new System.Drawing.Point(9, 480);
+            this.lblInspiredBy.Location = new System.Drawing.Point(9, 482);
             this.lblInspiredBy.Name = "lblInspiredBy";
-            this.lblInspiredBy.Size = new System.Drawing.Size(62, 13);
+            this.lblInspiredBy.Size = new System.Drawing.Size(127, 13);
             this.lblInspiredBy.TabIndex = 38;
-            this.lblInspiredBy.Text = "Inspired By:";
+            this.lblInspiredBy.Text = "Inspired By:                     |";
             this.lblInspiredBy.Click += new System.EventHandler(this.lblInspiredBy_Click);
+            // 
+            // lnkComic
+            // 
+            this.lnkComic.AutoSize = true;
+            this.lnkComic.Location = new System.Drawing.Point(68, 482);
+            this.lnkComic.Name = "lnkComic";
+            this.lnkComic.Size = new System.Drawing.Size(62, 13);
+            this.lnkComic.TabIndex = 39;
+            this.lnkComic.TabStop = true;
+            this.lnkComic.Text = "xkcd Comic";
+            this.lnkComic.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkComic_LinkClicked);
             // 
             // frmGeneratePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 502);
-            this.Controls.Add(this.lnkGitHubLink);
+            this.Controls.Add(this.lnkComic);
             this.Controls.Add(this.lnkxkPasswdLink);
             this.Controls.Add(this.lblInspiredBy);
             this.Controls.Add(this.grpOutput);
@@ -836,7 +836,6 @@
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.CheckBox chkAppendToStart;
         private System.Windows.Forms.Label lblWordCount;
-        private System.Windows.Forms.LinkLabel lnkGitHubLink;
         private System.Windows.Forms.CheckBox chkSaveToClipboard;
         private System.Windows.Forms.NumericUpDown numWordCount;
         private System.Windows.Forms.ComboBox ddlWordDictionary;
@@ -887,5 +886,6 @@
         private System.Windows.Forms.Label lblOther;
         private System.Windows.Forms.LinkLabel lnkxkPasswdLink;
         private System.Windows.Forms.Label lblInspiredBy;
+        private System.Windows.Forms.LinkLabel lnkComic;
     }
 }

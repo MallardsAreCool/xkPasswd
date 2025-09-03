@@ -123,16 +123,17 @@ namespace Kbg.NppPluginNET
 
             this.Cursor = Cursors.Default;
         }
-        private void GitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            lnkGitHubLink.LinkVisited = true;
-            System.Diagnostics.Process.Start("https://github.com/MallardsAreCool");
-        }
 
         private void lnkxkPasswd_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             lnkxkPasswdLink.LinkVisited = true;
             System.Diagnostics.Process.Start("https://www.xkpasswd.net/");
+        }
+
+        private void lnkComic_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            lnkComic.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://xkcd.com/936/");
         }
 
         private void ToggleButton(Button btnToggleButton)
